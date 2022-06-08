@@ -161,4 +161,76 @@ nav ul li a:hover {
   .flex-links address a:hover {
     color: var(--primary-color);
   }
+
+/* CSS grid styles */
+.project-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    height: 500px; 
+    flex: 0 0 70%;
+}
+
+.project-grid-item {
+    width: 1fr;
+    height: 1fr;
+    border: 6px solid var(--secondary-color);
+    border-radius: 7px;
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: end;
+    font-size: 17px;
+}
+
+.project-grid-item h3 {
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 3px;
+    opacity: 0.7;
+    margin-left: 9px;
+}
+
+.project-grid-item h3:hover {
+    background-color: rgba(180, 180, 180, 1.2);
+}
+
+.project-grid-item.run-buddy {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+}
+
+.project-grid-item.password-gen {
+    grid-column: 1 / span 1;
+    grid-row:  3 / span 1;
+    background-image: url(./images/matrix.png);
+    background-size: cover;
+}
+
+.project-grid-item.brolys-plan {
+    grid-column: 2/ span 1;
+    grid-row: 3 / span 1;
+    background-image: url(./images/broly.jpg);
+    background-size: cover;
+}
+
+.project-grid-item.enemy-battle-rounds {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    background-image: url(./images/battles.jpg);
+    background-size: cover;
+}
+
+.project-grid-item.the-throne {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    background-image: url(./images/Throne.jpg);
+    background-size: cover;
+}
+
 /* SECTION STYLES END */
