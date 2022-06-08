@@ -26,6 +26,7 @@
     flex-wrap: wrap;
     background-size: cover;
     justify-content: space-between;
+    position: sticky;
 
   }
 
@@ -35,15 +36,13 @@
   }
 
   header h1 {
-    padding: 3px 15px 3px 70px;
+    padding: 5px 1% 5px 6%;
     background-color: var(--secondary-color);
     font-weight: bold;
     font-size: 3vw;
     color: var(--tertiary-colorr);
     text-decoration: none;
     flex: 1 0 40%;
-    text-align: center;
-    align-items: center;
     
   }
   
@@ -57,6 +56,9 @@ nav {
     padding: 0;
     list-style: none;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
   }
   
 nav ul {
@@ -82,7 +84,7 @@ nav ul li a {
   }
   
 nav ul li a:hover {
-    color: var(--tertiary-color);
+    color: var(--primary-color);
   }
 /* NAV STYLES END */
 
@@ -91,6 +93,7 @@ nav ul li a:hover {
     background-image: url('./images/hero.jpg');
     background-size: cover;
     height: 300px;
+    margin-bottom: 20px;
   }
 
   .hero-h2 {
