@@ -1,4 +1,4 @@
-  # PURPOSE   
+  # PURPOSE     
     To create a running portfolio project to display skills learned in this course
 
 # METHOD
